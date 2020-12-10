@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import P5Wrapper from 'react-p5-wrapper';
 
 import Navbar from '../Navbar';
-// import Sierpinski from './sketches/Sierpinski';
+import sier from './sketches/Sierpinski';
 
 
 class Rocky_yew extends Component {
@@ -15,10 +16,10 @@ class Rocky_yew extends Component {
                 </div>
                 
                 <div className="sierpinski sketch_container">
-                    {/* <Sierpinski /> */}
-                    <a href='https://shawkai91.github.io/p5js-fafs/Rocky_yew/' target='_blank'>
+                    <P5Wrapper sketch={sier} />
+                    {/* <a href='https://shawkai91.github.io/p5js-fafs/Rocky_yew/' target='_blank'>
                         here is a link to it because heroku was not liking how i was doing it
-                    </a>
+                    </a> */}
                     <div className="sketch_container-discription">
                         <p>
                             The Sierpiński triangle (sometimes spelled Sierpinski), 
