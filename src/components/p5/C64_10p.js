@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-var P5Wrapper = require('react-p5-wrapper');
-
-import { appendScript, removeScript } from './ModScripts';
+import P5Wrapper from 'react-p5-wrapper';
 
 import Navbar from '../Navbar';
 import sketch from './sketches/10PRINT';
@@ -14,7 +12,7 @@ class C64_10p extends Component {
                 <Navbar />
 
                 <div className="my_spill c64">
-                     
+                     this is my spill about it.
                 </div>
 
                 <div className="10_print sketch_container">
@@ -23,7 +21,9 @@ class C64_10p extends Component {
                         here is a link to it because heroku was not liking how i was doing it
                     </a>
                     <div className="sketch_container-discription">
+                        <p>
                         this is the famous C64 one line program.  this vertion takes more then one line though.
+                        </p>
                     </div>
                 </div>
             </div>
