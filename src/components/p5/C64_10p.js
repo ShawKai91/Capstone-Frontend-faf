@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+var P5Wrapper = require('react-p5-wrapper');
 
 import { appendScript, removeScript } from './ModScripts';
 
 import Navbar from '../Navbar';
-// import C64PRINT from './sketches/10PRINT';
+import sketch from './sketches/10PRINT';
 
 
 class C64_10p extends Component {
@@ -13,15 +14,17 @@ class C64_10p extends Component {
                 <Navbar />
 
                 <div className="my_spill c64">
-                     this is the famous C64 one line program.  this vertion takes more then one line though.
+                     
                 </div>
 
                 <div className="10_print sketch_container">
-                    {/* <C64PRINT /> */}
+                    <P5Wrapper sketch={sketch} />
                     <a href='https://shawkai91.github.io/p5js-fafs/10PRINT/' target='_blank'>
                         here is a link to it because heroku was not liking how i was doing it
                     </a>
-                    <div className="sketch_container-discription"></div>
+                    <div className="sketch_container-discription">
+                        this is the famous C64 one line program.  this vertion takes more then one line though.
+                    </div>
                 </div>
             </div>
         );

@@ -19,7 +19,7 @@ function main() {
   ReactDOM.render(
     <Provider store={createStoreWithMiddleware(reducers)}>
       <BrowserRouter>
-      <Switch>
+        <Switch>
             <Route path='/' exact component={About}/>
             <Route path='/Rocky_yew' component={Rocky_yew}/>
             <Route path='/10print' component={C64_10p}/>
