@@ -2,20 +2,20 @@ import React, { Component } from 'react';
 
 import Navbar from './Navbar';
 
-import imgBG1 from '../assets/BG/(BG) girl.png';
-import imgBG2 from '../assets/BG/ashley.png';
-import imgBG3 from '../assets/BG/bgWide.png';
-import imgBG4 from '../assets/BG/spacebg.png';
+import imgBG1 from '../../static/assets/BG/(BG) girl.png';
+import imgBG2 from '../../static/assets/BG/ashley.png';
+import imgBG3 from '../../static/assets/BG/bgWide.png';
+import imgBG4 from '../../static/assets/BG/spacebg.png';
 
-import imgART1 from '../assets/AA/(a1) peaches.png';
-import imgART2 from '../assets/AA/(a3) archway.png';
-import imgART3 from '../assets/AA/(a8) bridge.png';
-import imgART4 from '../assets/AA/(l5) barley field.png';
-import imgART5 from '../assets/AA/(l6) koi.png';
-import imgART6 from '../assets/AA/(p1) beach.png';
-import imgART7 from '../assets/AA/(p3) glass.png';
-import imgART8 from '../assets/AA/(p4) candle.png';
-import imgART9 from '../assets/AA/(p8) night scene.png';
+import imgART1 from '../../static/assets/AA/(a1) peaches.png';
+import imgART2 from '../../static/assets/AA/(a3) archway.png';
+import imgART3 from '../../static/assets/AA/(a8) bridge.png';
+import imgART4 from '../../static/assets/AA/(l5) barley field.png';
+import imgART5 from '../../static/assets/AA/(l6) koi.png';
+import imgART6 from '../../static/assets/AA/(p1) beach.png';
+import imgART7 from '../../static/assets/AA/(p3) glass.png';
+import imgART8 from '../../static/assets/AA/(p4) candle.png';
+import imgART9 from '../../static/assets/AA/(p8) night scene.png';
 
 const BGimg = [
     { photo: imgBG1, text:"girl_bg image" },
