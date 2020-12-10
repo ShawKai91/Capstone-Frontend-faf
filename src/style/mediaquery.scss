@@ -1,0 +1,17 @@
+@media screen and (max-width: 750px) {
+
+    .my_spill {
+        font-size: 18pt;
+        margin: 1rem;
+    }
+  
+    .sketch_container {
+        // scale: 75%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: [s] 1fr [m] 1fr [e];
+        
+        &-discription {grid-row: m}
+        &-discription p {font-size: 16pt;}
+    }
+}

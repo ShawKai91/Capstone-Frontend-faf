@@ -1,0 +1,56 @@
+.background_images {
+    display: grid;
+    grid-template-columns: [BGs] 1fr [BGm] 1fr [BGe];
+    grid-template-rows: [BGs] 1fr [BGm-s] .55fr [BGm-e] .75fr [BGe];
+    grid-row-gap: .5rem;
+
+    .image {
+        width: 50%;
+        height: auto;
+    }
+
+    .ash_bg {
+        grid-column: BGm/BGe;
+        grid-row: BGs/BGe;
+    }
+    .girl_bg, .wide_bg, .space_bg {
+        grid-column: BGs/BGm;
+        justify-self: center;
+    }
+    .girl_bg {grid-row: BGs/BGm-s;}
+    .wide_bg {
+        grid-row: BGm-s/BGm-e;
+        align-self: center;
+    }
+    .space_bg {
+        grid-row: BGm-e/BGe;
+        align-self: end;
+    }
+}
+
+
+.my_artwork {
+    display: grid;
+    grid-template-columns: [ARTs] 1fr [ARTm-s] 1fr [ARTm-e] 1fr [ARTe];
+    grid-template-rows: [ARTs] 1fr [ARTm-s] .55fr [ARTm-e] .75fr [ARTe];
+    grid-row-gap: .5rem;
+
+    justify-items: center;
+    align-items: center;
+
+
+    .image {
+        width: 95%;
+        height: auto;
+    }
+
+    & a {
+        grid-row: ARTe;
+        grid-column: 1/-1;
+        justify-self:center ;
+        align-self: start;
+
+        height: 50px;
+        font-size: 10pt;
+    }
+}

@@ -1,3 +1,36 @@
-
-
 @import 'base';
+
+@import 'navbar/navbar';
+@import 'navnar/dropDown';
+
+@import 'images';
+
+.component_container{
+    margin-top: .5rem;
+    display: grid;
+    justify-items: center;
+}
+
+.my_spill {
+    font-size: 24pt;
+    margin: 1rem;
+}
+
+.sketch_container {
+    display: grid;
+    grid-template-columns: [s] 500px [m] 500px [e];
+    grid-column-gap: .5rem;
+
+    justify-items: center;
+
+    & a {
+        font-size: 24pt;
+        align-self: center;
+        text-decoration: none;
+    }
+
+    &-discription p {font-size: 18pt;}
+    &-discription a {font-size: 10pt;}
+}
+
+@import 'mediaquery';

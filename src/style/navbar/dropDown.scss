@@ -1,0 +1,54 @@
+/* Dropdown Button */
+.dropbtn {
+	font-family: 'Ubuntu Condensed', sans-serif; 
+	display: flex;
+	flex-direction: row;
+	font-size: 18pt;
+	border: none;
+  color: #cbcbcb;
+  background-color: #11122b;
+	cursor: pointer;
+  transition: 0.5s;
+  & svg {
+    // color: #00cc00;
+    align-self: center;
+    margin-left: 10px;
+    font-size: 14pt;
+  }
+  /* Dropdown button on hover & focus */
+  &:hover {
+    color: #0c0;
+    letter-spacing: 2px;
+  }
+  &:focus {
+    svg {color: #0c0;}
+  }
+}	
+
+  /* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  /* Dropdown Content (Hidden by Default) */
+  &-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    /* Links inside the dropdown */
+    & a {
+      font-family: 'Ubuntu Condensed', sans-serif;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      /* Change color of dropdown links on hover */
+      &:hover {background-color: #ddd;}
+    }
+  }
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
